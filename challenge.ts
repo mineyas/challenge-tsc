@@ -6,7 +6,7 @@ export interface User{
     birthday?: string
 }
 
-const prettyPrintWilder = (users: User[]) => {
+const prettyPrintWilder = (users: User[]):void => {
     users.map((user) => {
       console.log(`${user.name} is ${user.age} years old`);
     });
